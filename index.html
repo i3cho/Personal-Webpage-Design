@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabelle Cho's Personal Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela|Roboto" rel="stylesheet"> 
+    <style>
+        /** note I select Pacifico as my body text and Roboto further down the page for my header and link font, I can use these because of the reference in the <head> in the HTML doc **/
+        body {
+            font-family: "Varela", sans-serif; /* Use Pacifico font for the body text */
+            font-size: 30px;
+            background-color: #9bedff;
+            margin: 0; /* Add this to remove default margin */
+        }
+
+        /* Responsive Design Additions */
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+                font-size: 0.75em;
+            }
+            p, img {
+                width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 601px) { /* Add a colon after "min-width" */
+            img {
+                width: 800px;
+            }
+            p {
+                width: 600px;
+            }
+        }
+
+        /* misc. styling */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: lightgrey;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        ul a {
+            color: darkblue;
+        }
+
+        p, h1, h2, ul, img {
+            margin-left: 0;
+        }
+
+        img {
+            margin-top: 20px;
+            display: block;
+        }
+
+        p, #subhead {
+            background-color: #eee;
+            opacity: .9;
+            font-weight: lighter;
+        }
+
+        #headline {
+            display: block;
+        }
+
+        p {
+            padding: 1em 1em 1em 20px;
+        }
+
+        /* headers */
+        h1, li, h2 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1 {
+            font-size: 2em;
+            background-color: black;
+            color: white;
+            padding: .375em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            background-color: black;
+            color: white;
+            display: inline-block;
+            padding: .375em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="headline"><h1>Isabelle Cho</h1></div>
+    <!-- Note the use of hyperlinks below to link WITHIN a page, these are called HTML bookmarks, see https://www.w3schools.com/html/html_links_bookmarks.asp for more info--> 
+    <nav>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#pastexperience">Past Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h2><a name="aboutme">About Me</a></h2>
+    <p>Hi, I am Isabelle, a second-year GBDA Student making a project related to myself.
+            This website shows some of my interests/hobbies, a past experience I had, and ways you can contact me.</p>
+    <h2><a name="interests">Interests</a></h2>
+    <p>Integer in elit ut odio vestibulum sagittis a quis elit. Nam eget imperdiet dui. Cras consectetur nisi non ex laoreet consectetur sed a arcu. Integer non venenatis eros. Donec vel sem vel sem viverra ornare. Duis efficitur vehicula eros nec tempus. Vivamus ac magna vehicula, rhoncus dui et, aliquam dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut tempus, felis eget faucibus tristique, nisi justo dapibus augue, in iaculis elit mauris sed nisl. Suspendisse vel lorem vel mi aliquet ornare. Aenean sollicitudin volutpat mollis. Fusce quis magna euismod, pulvinar purus id, feugiat nisl. Maecenas at tortor eu enim imperdiet elementum. Ut vel aliquam arcu, molestie molestie purus. Sed viverra massa dui, ut ultrices lacus lacinia vel.</p>
+    <h2><a name="pastexperience">Past Experience</a></h2>
+    <img src="swimming.jpg" alt="deck cat">
+    <p>Fusce leo leo, maximus vel urna ut, egestas ultricies massa. Fusce faucibus, dolor auctor lacinia iaculis, lorem mi consequat enim, nec dignissim tortor lorem at nisi. Mauris vulputate dolor metus, in sollicitudin enim semper sed. Donec ultricies urna velit. Nulla pretium mattis odio, sed posuere ante scelerisque eu. Proin nec tortor sed nibh tempor ullamcorper pellentesque faucibus nunc. Orci varius
+<h2><a name="Contact">Contact</a></h2>
+<p>Morbi vestibulum massa vitae tortor vehicula rhoncus. Duis ac orci rhoncus, consectetur justo at, faucibus lacus. Nunc sit amet dolor sed neque scelerisque congue vel at nisi. Nam pellentesque nisi eu nisi cursus vulputate. Ut condimentum semper fermentum. Nulla facilisi. Quisque porttitor dui id erat fringilla, vitae euismod ipsum pulvinar. Ut lacinia sollicitudin augue ac accumsan. Etiam molestie tincidunt mi rutrum ornare.</p>
+</body>
+</html>
